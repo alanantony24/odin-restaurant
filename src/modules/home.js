@@ -1,3 +1,5 @@
+import foodImage from '../images/kerala_food.jpg';
+
 const createHomePage = () => {
   const homePageSection = document.createElement('section');
 
@@ -5,8 +7,8 @@ const createHomePage = () => {
   title.textContent = "At this restaurant we serve authentic Kerala food, ranging from Kasargod Neerdosha to Kozhikode Halwa";
   homePageSection.appendChild(title);
 
-  const image = document.createElement('img');
-  image.src = '../src/images/kerala_food.jpg';
+  const image = new Image();
+  image.src = foodImage;
   image.classList.add('homePageImage');
   homePageSection.appendChild(image);
 
